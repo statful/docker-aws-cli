@@ -2,7 +2,7 @@ FROM alpine
 
 MAINTAINER Vasco Santos <jvosantos@gmail.com>
 
-ARG AWS_VERSION="1.17.14"
+ARG AWS_VERSION="1.17.15"
 
 RUN apk update \
  &&  apk add ca-certificates curl py-pip py2-pip \
