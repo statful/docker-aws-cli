@@ -1,11 +1,14 @@
-FROM alpine
+FROM ubuntu:latest
 
 MAINTAINER Vasco Santos <jvosantos@gmail.com>
 
-ARG AWS_VERSION="1.18.85"
+ARG AWS_VERSION="2.0.5"
 
-RUN apk update \
- &&  apk add ca-certificates curl py-pip py2-pip \
- &&  pip install --upgrade pip "awscli==${AWS_VERSION}" \
- &&  rm /var/cache/apk/*
+RUN apt-get update \
+  && apt-get install -y ca-certificates curl unzip
+
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${AWS_VERSION}.zip" -o "awscliv2.zip" \
+  && unzip awscliv2.zip \
+  && ./aws/install \
+  && rm -rf aws awscliv2.zip
 
