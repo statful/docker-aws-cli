@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 MAINTAINER Vasco Santos <jvosantos@gmail.com>
 
-ARG AWS_VERSION="2.0.30"
+ARG AWS_VERSION="2.0.31"
 
 RUN apt-get update \
   && apt-get install -y ca-certificates curl unzip
