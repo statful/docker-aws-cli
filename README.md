@@ -14,7 +14,11 @@ docker run -ti --rm statful/aws-cli aws version
 
 # Supported tags and respective `Dockerfile` links
 
-* [`1.16`, `latest` (Dockerfile)](https://github.com/statful/docker-aws-cli/blob/1.16/Dockerfile)
+The tags that match the following regex should be supported
+* X.Y.Z
+* X.Y
+
+where `X`, `Y` and `Z` correspond to major minor and patch numbers following a semantic versioning approach.
 
 Subscribe to project updates by watching the [statful/docker-aws-cli GitHub repo](https://github.com/statful/docker-aws-cli).
 
