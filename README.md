@@ -14,7 +14,7 @@ docker run -ti --rm statful/aws-cli aws version
 
 # Supported tags and respective `Dockerfile` links
 
-The tags that match the following regex should be supported
+The tags that match the following should be supported
 * X.Y.Z
 * X.Y
 
